@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Saeed's Game</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <img src="./public/logoN.png" alt="Challenge Quest Image" class="header-image">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 p-5 rounded shadow challenge-inputs">
+                <div>
+                    <label for="challengeNumber">Enter a challenge number (1-120):</label>
+                    <input type="number" id="challengeNumber" min="1" max="120">
+                    <button id="getChallengeButton">Get Challenge</button>
+                    <button id="getRandomChallengeButton">Get Random Challenge</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+
+            <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 p-5 rounded shadow challengeDisplay">
+                <div>
+                    <div id="challengeDisplay">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
